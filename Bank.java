@@ -79,7 +79,7 @@ public class Bank {
 							    System.out.println("Enter your password: ");
 								password = sc.nextLine();
 								customer = bank.stored.get(username);
-								if(customer.password.endsWith(password))
+								if(customer.password.equals(password))
 								{
 									System.out.println("Welcome back "+" " + customer.name);
 								    do
